@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.5);
+}
+.todo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+h1,
+h2 {
+  color: #fff;
+  margin: 16px 0 0 0;
+}
+
+#todoInput,
+.add {
+  margin: 8px 0;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 2.5px solid #e0e1e4;
+  box-shadow: 0px 0px 20px -20px;
+}
+.add {
+  width: fit-content;
+  float: right;
+  margin-right: 10px;
+  min-width: 60px;
+  /* height: 45px; */
+  padding: 8px;
+  border-radius: 5px;
+  border: 2.5px solid #e0e1e4;
+  box-shadow: 0px 0px 20px -20px;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.2s ease-in-out 0ms;
+  user-select: none;
+  color: #666666;
+  font-family: "Poppins", sans-serif;
+}
+
+.add:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 20px -18px;
+}
+
+.add:active {
+  transform: scale(0.95);
+}
+#todoList {
+  list-style: none;
+  padding: 0;
+  box-sizing: border-box;
+  /* margin-top: 30px; */
+}
+
+#todoList li {
+  padding: 16px 0 16px 32px;
+  color: #404041;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  border: 2.5px solid #e0e1e4;
+  box-shadow: 0px 0px 20px -20px;
+}
+
+ul li button:hover {
+  background-color: black;
+}
+/* 可以为已完成列表添加不同的背景色或边框 */
+#completedList li {
+  background-color: #e7f3fe; /* 浅蓝色背景 */
+  text-decoration: line-through; /* 文本装饰线表示已完成 */
+}
+
+/* 如果需要，也可以为复选框添加样式 */
+.checkbox {
+  /* float: left; */
+  margin: left 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  border: 1px solid rgb(59, 58, 58);
+}

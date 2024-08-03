@@ -1,0 +1,229 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d8d8d8;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  background: rgba(53, 51, 51, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: white;
+  margin: 8px 0;
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-out-left {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.slide-in-right {
+  animation: slide-in-right 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.slide-out-left {
+  animation: slide-out-left 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+li {
+  list-style: none;
+}
+.box-hd {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+.box-hd h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+}
+.box-hd .hd-content {
+  position: relative;
+  padding-right: 50px;
+}
+.box-hd .hd-content #todoInput {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+}
+.box-hd .hd-content #todoInput:focus {
+  outline: none;
+}
+.box-hd .hd-content .add {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-right: 0;
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+  color: #999999;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+.box-hd .hd-content .add:hover {
+  background-color: #f4f4f4;
+  color: #2b2b2c;
+  border: #e0e1e4;
+  box-shadow: 2px 2px 10px #fef5e8;
+}
+.todo,
+.complete {
+  position: relative;
+  margin: 30px 0;
+  padding: 6px 0;
+}
+.todo .clear,
+.complete .clear {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  height: 28px !important;
+  width: 60px !important;
+  line-height: 20px !important;
+  text-align: center;
+  box-shadow: 4px;
+  padding: 0 !important;
+}
+#todoList,
+#completedList {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 0;
+  border-top: 2px solid #e0e1e4;
+}
+#todoList li,
+#completedList li {
+  box-sizing: border-box;
+  position: relative;
+  padding: 6px 12px 6px 36px;
+  margin: 12px 0;
+  color: #404041;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px -20px;
+  font-size: 18px;
+  overflow: hidden;
+}
+#todoList li .checkbox,
+#completedList li .checkbox {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #b8b8b9;
+  font-size: 20px;
+}
+#todoList li .checkbox:hover,
+#completedList li .checkbox:hover {
+  color: #2b2b2c;
+}
+#todoList li .delet,
+#completedList li .delet {
+  position: absolute;
+  top: 0px;
+  right: -40px;
+  height: 40px;
+  width: 60px;
+  text-align: center;
+  color: #797878;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  font-size: 24px;
+  border-radius: 2px;
+}
+#todoList li:hover .delet,
+#completedList li:hover .delet {
+  right: 0;
+  color: #f6f5f5;
+  background-color: #ca2525;
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.listOperater {
+  margin: 24px 0;
+  margin-bottom: 4px;
+}
+.listOperater button {
+  margin-right: 10px;
+}
+.listOperater .visual {
+  display: none;
+}
+.completedList {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  border: 2.5px solid #e0e1e4;
+  box-shadow: 0px 0px 20px -20px;
+  margin-top: 24px;
+}
+.completedList h2 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #404041;
+  margin: 12px 0;
+}
+.listOperater {
+  margin: 24px 0;
+  margin-bottom: 4px;
+}
+.listOperater button {
+  margin-right: 10px;
+}
+.listOperater .visual {
+  display: none;
+}

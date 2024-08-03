@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/index2.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="box-hd">
+        <h2>Todo List</h2>
+        <div class="hd-content">
+          <input type="text" id="todoInput" placeholder="添加新的待办事项..." />
+          <i class="add bi bi-plus"></i>
+        </div>
+      </div>
+      <div class="box-bd">
+        <div class="todo">
+          <button class="btn btn-light clear">Clear</button>
+
+          <h3 class="ToDo">ToDo</h3>
+          <ul id="todoList">
+            <!-- Todo items will be added here -->
+          </ul>
+        </div>
+
+        <div class="complete">
+          <h3 class="Completed">Completed</h3>
+          <button class="btn btn-light clear">Clear</button>
+          <ul id="completedList">
+            <!-- Completed items will be moved here -->
+          </ul>
+        </div>
+      </div>
+      <div class="listOperater">
+        <button type="button" class="clear-all btn btn-light">Clear All</button>
+        <button type="button" class="visual btn btn-light">
+          Show completed
+        </button>
+      </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/index2.js"></script>
+  </body>
+</html>
