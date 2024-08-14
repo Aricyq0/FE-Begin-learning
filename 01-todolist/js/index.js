@@ -1,167 +1,207 @@
-window.onload = function () {
-  displayTodos();
-};
-
-var input = document.getElementById("todoInput");
-var btn = document.querySelector(".add");
-var list = document.getElementById("todoList");
-var completedList = document.getElementById("completedList");
-btn.addEventListener("click", function () {
-  var itemText = input.value;
-
-  if (itemText) {
-    var key = `todo-${Date.now()}`;
-    var li = document.createElement("li");
-    li.textContent = itemText;
-    li.flag = 0;
-    var todoitem = [{ text: itemText, flag: li.flag }];
-    localStorage.setItem(key, JSON.stringify(todoitem));
-
-    // console.log(li);
-    // 使用模版字符串或元素减少元素创建过程；
-
-    // 在复选框后添加文本
-
-    var checkbox = document.createElement("button");
-    checkbox.className = "checkbox";
-    checkbox.textContent = "";
-
-    var del = document.createElement("button");
-    del.className = "delet";
-    del.textContent = "删除";
-    li.appendChild(checkbox);
-    li.appendChild(del);
-    // console.log(li.children);
-
-    list.appendChild(li);
-    checkbox.addEventListener("click", (e) => handleCheckboxClick(e, li.flag));
-    del.addEventListener("click", handleDeleteClick);
-
-    displayTodos();
-
-    input.value = ""; // 清除输入框
+window.addEventListener("load", function () {
+  todos = getStorage() || [];
+  visualStatus = localStorage.getItem("visualStatus");
+  if (todos) {
+    render();
   }
 });
 
-const handleCheckboxClick = (e) => {
-  var btn = e.target;
-  var filteredText = "";
+// 使用封装Todo项的增删改方法
+// Todo类
+class Todo {
+  constructor(text) {
+    this.text = text;
+    this.completed = false;
+    this.creatDate = new Date();
+    this.completedDate = null;
+  }
+}
 
-  // 遍历 parent 的所有子元素
-  Array.from(btn.parentElement.childNodes).forEach((node) => {
-    if (node.nodeType === Node.ELEMENT_NODE) {
-      if (node.tagName !== "BUTTON") {
-        filteredText += node.textContent + " ";
+// 数据管理
+let todos = [];
+let visualStatus = null;
+
+// 增加todo
+function addTodo(text) {
+  const item = new Todo(text);
+  todos.push(item);
+  render();
+}
+
+// 删除todo
+function removeTodo(item) {
+  todos.splice(todos.indexOf(item), 1);
+  render();
+}
+
+// 修改状态
+function toggleTodo(item) {
+  item.completed = !item.completed;
+  if (item.completed) {
+    item.completedDate = Date();
+  } else {
+    item.creatDate = Date();
+  }
+  render();
+}
+
+// 渲染todos
+const todoList = document.getElementById("todoList");
+const complete = document.querySelector(".complete");
+
+const clearTodo = document.querySelector(".todo").querySelector(".clear");
+
+const clearCompleted = complete.querySelector(".clear");
+const clearAll = document.querySelector(".clear-all");
+const completedList = document.getElementById("completedList");
+const todo = document.querySelector(".todo");
+const input = document.getElementById("todoInput");
+
+const visualBtn = document.querySelector(".visual");
+
+function render() {
+  todoList.innerHTML = "";
+  completedList.innerHTML = "";
+  complete.style.display = "none";
+  visualBtn.style.display = "none";
+
+  todos.forEach((todo) => {
+    const li = document.createElement("li");
+    li.textContent = todo.text;
+
+    // ...
+
+    if (todo.completed) {
+      var lihtml = `<del>${todo.text}</del><i class="checkbox bi bi-check-circle-fill" style="color: rgba(213, 79, 42, 0.895)"></i><i class="delet bi bi-trash3-fill"></i><div style="display:none">${todo.creatDate}</div>`;
+      li.innerHTML = lihtml;
+      li.querySelector(".checkbox").addEventListener("click", (e) =>
+        handleCheckboxClick(e)
+      );
+      li.querySelector(".delet").addEventListener("click", (e) =>
+        handleDeleteClick(e)
+      );
+      completedList.insertBefore(li, completedList.children[0]);
+    } else {
+      var lihtml = `${todo.text}<i class="checkbox bi bi-check-circle disabled"></i><i class="delet bi bi-trash3-fill"></i><div style="display:none">${todo.creatDate}</div>`;
+      li.innerHTML = lihtml;
+      li.querySelector(".checkbox").addEventListener("click", (e) =>
+        handleCheckboxClick(e)
+      );
+      li.querySelector(".delet").addEventListener("click", (e) =>
+        handleDeleteClick(e)
+      );
+      // if (todo.creatDate == Date()) {
+      //   li.classList.add("slide-in-right");
+      // }
+      todoList.insertBefore(li, todoList.children[0]);
+    }
+    if (completedList.children.length > 0) {
+      if (visualStatus) {
+        visualBtn.style.display = "inline-block";
+        visualBtn.textContent = "Hide Completed";
+        complete.style.display = "block";
+      } else {
+        console.log(visualStatus);
+        console.log(complete);
+
+        complete.style.display = "none";
+        visualBtn.style.display = "inline-block";
+        visualBtn.textContent = "Show Completed";
       }
-    } else if (node.nodeType === Node.TEXT_NODE) {
-      filteredText += node.nodeValue + " ";
+    } else {
+      complete.style.display = "none !important";
+      visualBtn.style.display = "none";
     }
   });
-  filteredText = filteredText.trim();
-  for (i = 0; i < localStorage.length; i++) {
-    var key = localStorage.key(i);
-    var storetext = JSON.parse(localStorage.getItem(key))[0].text;
-    var flag = JSON.parse(localStorage.getItem(key))[0].flag;
-    if (storetext === filteredText) {
-      if (flag == 0) {
-        btn.classList.add("checked");
-        list.removeChild(btn.parentElement);
-        completedList.appendChild(btn.parentElement);
-        btn.parentElement.flag = 1;
-        localStorage.setItem(
-          key,
-          JSON.stringify([{ text: filteredText, flag: btn.parentElement.flag }])
-        );
-      } else {
-        btn.classList.remove("checked");
-        completedList.removeChild(btn.parentElement);
-        list.appendChild(btn.parentElement);
-        btn.parentElement.flag = 0;
-        localStorage.setItem(
-          key,
-          JSON.stringify([{ text: filteredText, flag: btn.parentElement.flag }])
-        );
-      }
+  saveToStorage();
+}
+
+// 存储到localStorage
+function saveToStorage() {
+  localStorage.setItem("todos", JSON.stringify(todos));
+  localStorage.setItem("visualStatus", visualStatus);
+}
+
+function getStorage() {
+  todos = JSON.parse(localStorage.getItem("todos"));
+  return todos;
+}
+
+const handleCheckboxClick = (e) => {
+  var li = e.target.parentElement;
+  Array.from(li.childNodes).forEach((node) => {
+    if (node.tagName == "DIV") {
+      console.log(node.textContent);
+      const todoIndex = todos.findIndex((t) => t.creatDate == node.textContent);
+      toggleTodo(todos[todoIndex]);
     }
-  }
-
-  // if (btn.parentElement.flag === 0) {
-  //   btn.classList.add("checked");
-  //   // console.log(btn);
-  //   // console.log(this.classList);
-  //   // this.classList.add("checked");
-  //   list.removeChild(btn.parentElement);
-  //   completedList.appendChild(btn.parentElement);
-
-  //   btn.parentElement.flag = 1;
-  // } else {
-  //   btn.classList.remove("checked");
-  //   completedList.removeChild(btn.parentElement);
-  //   list.appendChild(btn.parentElement);
-  //   btn.parentElement.flag = 0;
-  // }
+  });
 };
 
 const handleDeleteClick = (e) => {
-  // list.removeChild(this.parentElement);
-  // var parent = this.parentElement; // 假设 this 是 parent 下的某个子元素
-  var delet = e.target;
-  var filteredText = "";
+  var li = e.target.parentElement;
 
-  // 遍历 parent 的所有子元素
-  Array.from(delet.parentElement.childNodes).forEach((node) => {
-    if (node.nodeType === Node.ELEMENT_NODE) {
-      if (node.tagName !== "BUTTON") {
-        filteredText += node.textContent + " ";
-      }
-    } else if (node.nodeType === Node.TEXT_NODE) {
-      filteredText += node.nodeValue + " ";
+  Array.from(li.childNodes).forEach((node) => {
+    if (node.tagName == "DIV") {
+      const todoIndex = todos.findIndex((t) => t.creatDate == node.textContent);
+      removeTodo(todos[todoIndex]);
     }
   });
-  filteredText = filteredText.trim();
-  delet.parentElement.remove();
-  for (i = 0; i < localStorage.length; i++) {
-    var key = localStorage.key(i);
-    if (JSON.parse(localStorage.getItem(key))[0].text === filteredText) {
-      localStorage.removeItem(key);
-    }
-  }
 };
+// 事件绑定
+const btn = document.querySelector(".add");
 
-function displayTodos() {
-  list.innerHTML = "";
-  completedList.innerHTML = "";
-  for (let i = 0; i < localStorage.length; i++) {
-    var key = localStorage.key(i);
-    var storetext = JSON.parse(localStorage.getItem(key))[0].text;
-    var flag = JSON.parse(localStorage.getItem(key))[0].flag;
-    if (flag == 0) {
-      console.log("1");
-      var lihtml = `${storetext}<button class="checkbox"></button><button class="delet">删除</button>`;
-      var li = document.createElement("li");
-      li.innerHTML = lihtml;
-      li.flag = flag;
+btn.addEventListener("click", (e) => {
+  var itemText = input.value;
 
-      var checkbox = li.querySelector(".checkbox");
-      var del = li.querySelector(".delet");
-      list.appendChild(li);
-      checkbox.addEventListener("click", (e) => handleCheckboxClick(e));
-
-      del.addEventListener("click", handleDeleteClick);
-    } else {
-      console.log("1");
-      var lihtml = `${storetext}<button class="checkbox checked"></button><button class="delet">删除</button>`;
-      var li = document.createElement("li");
-
-      li.innerHTML = lihtml;
-      li.flag = flag;
-
-      var checkbox = li.querySelector(".checkbox");
-      var del = li.querySelector(".delet");
-      completedList.appendChild(li);
-      checkbox.addEventListener("click", (e) => handleCheckboxClick(e));
-
-      del.addEventListener("click", handleDeleteClick);
-    }
+  if (itemText) {
+    addTodo(itemText);
   }
-}
+  // 判断目标元素调用对应的方法
+  input.value = "";
+});
+input.addEventListener("input", (e) => {
+  var itemText = input.value;
+  if (itemText) {
+    btn.classList.add("active");
+  } else {
+    btn.classList.remove("active");
+  }
+});
+
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    var itemText = input.value;
+    if (itemText) {
+      addTodo(itemText);
+    }
+    input.value = "";
+  }
+});
+clearTodo.addEventListener("click", (e) => {
+  todos = todos.filter((todo) => todo.completed);
+  render();
+});
+
+clearCompleted.addEventListener("click", (e) => {
+  todos = todos.filter((todo) => !todo.completed);
+  render();
+});
+
+clearAll.addEventListener("click", (e) => {
+  console.log("1");
+  todos = [];
+  render();
+});
+
+visualBtn.addEventListener("click", (e) => {
+  if (visualStatus) {
+    visualStatus = false;
+    visualBtn.textContent = "Show Completed";
+  } else {
+    visualStatus = true;
+    visualBtn.textContent = "Hide Completed";
+  }
+  render();
+});

@@ -1,36 +1,52 @@
-body {
-  font-family: Arial, sans-serif;
-  // position: relative;
-  margin: 20px auto;
-  height: 100vh;
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+:root {
+  --medium1: #f8f9faff;
+  --medium2: #e9ecefff;
+  --medium3: #dee2e6ff;
+  --medium4: #ced4daff;
+  --medium5: #adb5bdff;
+  --medium6: #6c757dff;
+  --medium7: #495057ff;
+  --medium8: #343a40ff;
+  --medium9: #212529ff;
 
+  --secondary1: #223843ff;
+  --primary5: #eff1f3ff;
+  --primary4: #dbd3d8ff;
+  --primary3: #d8b4a0ff;
+  --primary2: #d77a61ff;
+  --primary1: rgba(213, 79, 42, 0.895);
+}
+
+body {
+  font-family: "Courier Prime", "Playfair Display", "Microsoft Yahei", Arial,
+    sans-serif;
+
+  margin: 20vh auto;
+  min-height: 100vh;
   width: 100vw;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #d8d8d8;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
 .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  margin: 10vh auto;
   width: 400px;
   padding: 20px;
-  transform: translate(-50%, -50%);
-  background: rgba(53, 51, 51, 0.5);
-  box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  background: var(--medium-color-7);
+  box-shadow: 0 15px 25px var(--medium5);
   border-radius: 10px;
-  // max-width: 90%;
-  // max-height: 90%;
+  margin-bottom: 100px;
 }
 h1,
 h2,
 h3,
 h4 {
-  color: white;
+  color: var(--primary1);
   margin: 8px 0;
+  font-weight: 600;
 }
 @keyframes slide-in-right {
   0% {
@@ -42,6 +58,7 @@ h4 {
     opacity: 1;
   }
 }
+
 @keyframes slide-out-left {
   0% {
     transform: translateX(0);
@@ -65,7 +82,7 @@ h4 {
 }
 
 .slide-in-right {
-  animation: slide-in-right 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .slide-out-left {
   animation: slide-out-left 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
@@ -78,12 +95,14 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   h2 {
     font-size: 30px;
-    font-weight: 500;
-    color: #ffffff;
+
+    color: var(--primary1);
     margin: 0;
+    text-align: center;
+    margin-bottom: 30px;
   }
   .hd-content {
     position: relative;
@@ -91,8 +110,8 @@ li {
     #todoInput {
       width: 100%;
       margin: 8px 0;
-      padding: 10px;
-      font-size: 14px;
+      padding: 8px;
+      font-size: 16px;
       border-radius: 5px;
       border: none;
       &:focus {
@@ -106,23 +125,23 @@ li {
       transform: translateY(-50%);
       width: 30px;
       height: 30px;
-      text-align: center;
       line-height: 30px;
       border-radius: 50%;
-      background-color: #ffffff;
+      background-color: var(--medium1);
       margin-right: 0;
       font-size: 30px;
+      text-align: center;
+
       cursor: pointer;
       user-select: none;
-      color: #999999;
+      color: var(--primary3);
       font-family: "Poppins", sans-serif;
       box-sizing: border-box;
       &:hover {
-        background-color: #f4f4f4;
-        color: #2b2b2c;
-        border: #e0e1e4;
-
-        box-shadow: 2px 2px 10px rgb(254, 245, 232);
+        background-color: var(--primary1);
+        color: var(--medium1);
+        // border: #e0e1e4;
+        box-shadow: 1px 2.5px 10px var(--medium6);
       }
     }
   }
@@ -139,10 +158,15 @@ li {
     right: 0;
     height: 28px !important;
     width: 60px !important;
+    color: var(--secondary1);
     line-height: 20px !important;
     text-align: center;
     box-shadow: 4px;
     padding: 0 !important;
+    &:hover {
+      background-color: var(--primary1);
+      color: var(--medium1);
+    }
   }
 }
 
@@ -155,49 +179,61 @@ li {
   box-sizing: border-box;
   overflow: hidden;
   border: 0;
-  border-top: 2px solid #e0e1e4;
+  border-top: 2px solid var(--primary1);
   li {
     // width: 100%;
     box-sizing: border-box;
     position: relative;
-    padding: 6px 12px 6px 36px;
+    padding: 6px 12px 6px 40px;
     margin: 12px 0;
     // margin-top: 0;
-    color: #404041;
-    background-color: #f4f4f4;
-    border-radius: 5px;
+    color: var(--medium1);
+    background-color: var(--primary2);
+    border-radius: 6px;
     // border: 2.5px solid #e0e1e4;
-    box-shadow: 0px 0px 20px -20px;
     font-size: 18px;
     overflow: hidden;
+
+    &:hover .delet {
+      right: 0;
+      color: rgb(246, 245, 245);
+      background-color: var(--primary1);
+      animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
     .checkbox {
       position: absolute;
-      top: 50%;
-      left: 5px;
+      top: 58%;
+      left: 10px;
       transform: translateY(-50%);
-      color: #b8b8b9;
+      color: var(--medium2);
       font-size: 20px;
       &:hover {
-        color: #2b2b2c;
+        // text-shadow: 0 2px 10px var(--primary3);
+        color: var(--primary1);
+        font-weight: 600;
       }
     }
     .delet {
       position: absolute;
       top: 0px;
-      right: -40px;
+      right: -60px;
       height: 40px;
       width: 60px;
       text-align: center;
-      color: rgb(121, 120, 120);
+      color: var(--primary1);
       font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
       font-size: 24px;
       border-radius: 2px;
+      &:hover {
+        right: 0;
+        background-color: var(--secondary1);
+        color: var(--medium1);
+        // animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      }
     }
-    &:hover .delet {
-      right: 0;
-      color: rgb(246, 245, 245);
-      background-color: #ca2525;
-      animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+    &:hover {
+      box-shadow: 2px 2px 10px var(--medium1);
     }
   }
 }
@@ -214,17 +250,11 @@ li {
 }
 
 .completedList {
-  background-color: #f4f4f4;
+  background-color: var(--medium8);
   border-radius: 5px;
-  border: 2.5px solid #e0e1e4;
-  box-shadow: 0px 0px 20px -20px;
+  border: 2.5px solid var(--medium1);
+  // box-shadow: 0px 0px 20px -20px;
   margin-top: 24px;
-  h2 {
-    font-size: 22px;
-    font-weight: 500;
-    color: #404041;
-    margin: 12px 0;
-  }
 }
 
 .listOperater {
@@ -232,6 +262,11 @@ li {
   margin-bottom: 4px;
   button {
     margin-right: 10px;
+    color: var(--secondary1);
+    &:hover {
+      background-color: var(--primary1);
+      color: var(--medium1);
+    }
   }
   .visual {
     display: none;

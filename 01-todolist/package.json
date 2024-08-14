@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@ant-design/colors": "^7.1.0",
     "bootstrap-icons": "^1.11.3"
   }
 }

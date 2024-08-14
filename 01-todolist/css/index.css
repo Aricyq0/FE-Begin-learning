@@ -1,98 +1,370 @@
+@font-face {
+  font-family: 'Courier Prime';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/courierprime/v9/u-4n0q2lgwslOqpF_6gQ8kELawRpXw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Courier Prime';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/courierprime/v9/u-4i0q2lgwslOqpF_6gQ8kELawRR4-Lfrg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Courier Prime';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/courierprime/v9/u-450q2lgwslOqpF_6gQ8kELWwY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Courier Prime';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/courierprime/v9/u-4k0q2lgwslOqpF_6gQ8kELY7pMf-c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTbtY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_pqTbtY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_naUbtY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_k-UbtY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_iiUbtY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_gGUbtY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvUDQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKd3vUDQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKebukDQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiukDQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFukDQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfsukDQ.ttf) format('truetype');
+}
+:root {
+  --medium1: #f8f9faff;
+  --medium2: #e9ecefff;
+  --medium3: #dee2e6ff;
+  --medium4: #ced4daff;
+  --medium5: #adb5bdff;
+  --medium6: #6c757dff;
+  --medium7: #495057ff;
+  --medium8: #343a40ff;
+  --medium9: #212529ff;
+  --secondary1: #223843ff;
+  --primary5: #eff1f3ff;
+  --primary4: #dbd3d8ff;
+  --primary3: #d8b4a0ff;
+  --primary2: #d77a61ff;
+  --primary1: rgba(213, 79, 42, 0.895);
+}
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
+  font-family: "Courier Prime", "Playfair Display", "Microsoft Yahei", Arial, sans-serif;
+  margin: 20vh auto;
+  min-height: 100vh;
+  width: 100vw;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
-.todo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.content {
+  margin: 10vh auto;
   width: 400px;
   padding: 20px;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.5);
-  box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  background: var(--medium-color-7);
+  box-shadow: 0 15px 25px var(--medium5);
   border-radius: 10px;
+  margin-bottom: 100px;
 }
-
 h1,
-h2 {
-  color: #fff;
-  margin: 16px 0 0 0;
-}
-
-#todoInput,
-.add {
+h2,
+h3,
+h4 {
+  color: var(--primary1);
   margin: 8px 0;
-  padding: 10px;
-  font-size: 14px;
-  border-radius: 5px;
-  border: 2.5px solid #e0e1e4;
-  box-shadow: 0px 0px 20px -20px;
+  font-weight: 600;
 }
-.add {
-  width: fit-content;
-  float: right;
-  margin-right: 10px;
-  min-width: 60px;
-  /* height: 45px; */
-  padding: 8px;
-  border-radius: 5px;
-  border: 2.5px solid #e0e1e4;
-  box-shadow: 0px 0px 20px -20px;
-  cursor: pointer;
-  background-color: white;
-  transition: all 0.2s ease-in-out 0ms;
-  user-select: none;
-  color: #666666;
-  font-family: "Poppins", sans-serif;
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
-
-.add:hover {
-  background-color: #f2f2f2;
-  box-shadow: 0px 0px 20px -18px;
+@keyframes slide-out-left {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
 }
-
-.add:active {
-  transform: scale(0.95);
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
-#todoList {
+.slide-in-right {
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.slide-out-left {
+  animation: slide-out-left 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+li {
   list-style: none;
-  padding: 0;
-  box-sizing: border-box;
-  /* margin-top: 30px; */
 }
-
-#todoList li {
-  padding: 16px 0 16px 32px;
-  color: #404041;
-  background-color: #f4f4f4;
+.box-hd {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 12px;
+}
+.box-hd h2 {
+  font-size: 30px;
+  color: var(--primary1);
+  margin: 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.box-hd .hd-content {
+  position: relative;
+  padding-right: 50px;
+}
+.box-hd .hd-content #todoInput {
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+  font-size: 16px;
   border-radius: 5px;
-  border: 2.5px solid #e0e1e4;
-  box-shadow: 0px 0px 20px -20px;
+  border: none;
 }
-
-ul li button:hover {
-  background-color: black;
+.box-hd .hd-content #todoInput:focus {
+  outline: none;
 }
-/* 可以为已完成列表添加不同的背景色或边框 */
+.box-hd .hd-content .add {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: var(--medium1);
+  margin-right: 0;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  color: var(--medium6);
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+.box-hd .hd-content .add:hover {
+  background-color: var(--primary1);
+  color: var(--medium1);
+  box-shadow: 1px 2.5px 10px var(--medium6);
+}
+.todo,
+.complete {
+  position: relative;
+  margin: 30px 0;
+  padding: 6px 0;
+}
+.todo .clear,
+.complete .clear {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  height: 28px !important;
+  width: 60px !important;
+  color: var(--secondary1);
+  line-height: 20px !important;
+  text-align: center;
+  box-shadow: 4px;
+  padding: 0 !important;
+}
+.todo .clear:hover,
+.complete .clear:hover {
+  background-color: var(--primary1);
+  color: var(--medium1);
+}
+#todoList,
+#completedList {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 0;
+  border-top: 2px solid var(--primary1);
+}
+#todoList li,
 #completedList li {
-  background-color: #e7f3fe; /* 浅蓝色背景 */
-  text-decoration: line-through; /* 文本装饰线表示已完成 */
+  box-sizing: border-box;
+  position: relative;
+  padding: 6px 12px 6px 40px;
+  margin: 12px 0;
+  color: var(--medium1);
+  background-color: var(--primary2);
+  border-radius: 6px;
+  font-size: 18px;
+  overflow: hidden;
 }
-
-/* 如果需要，也可以为复选框添加样式 */
-.checkbox {
-  /* float: left; */
-  margin: left 5px;
-  width: 16px;
-  height: 16px;
-  border-radius: 16px;
-  border: 1px solid rgb(59, 58, 58);
+#todoList li:hover .delet,
+#completedList li:hover .delet {
+  right: 0;
+  color: #f6f5f5;
+  background-color: var(--primary1);
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+#todoList li .checkbox,
+#completedList li .checkbox {
+  position: absolute;
+  top: 58%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: var(--medium2);
+  font-size: 20px;
+}
+#todoList li .checkbox:hover,
+#completedList li .checkbox:hover {
+  color: var(--primary1);
+  font-weight: 600;
+}
+#todoList li .delet,
+#completedList li .delet {
+  position: absolute;
+  top: 0px;
+  right: -60px;
+  height: 40px;
+  width: 60px;
+  text-align: center;
+  color: var(--primary1);
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  font-size: 24px;
+  border-radius: 2px;
+}
+#todoList li .delet:hover,
+#completedList li .delet:hover {
+  right: 0;
+  background-color: var(--secondary1);
+  color: var(--medium1);
+}
+#todoList li:hover,
+#completedList li:hover {
+  box-shadow: 2px 2px 10px var(--medium1);
+}
+.listOperater {
+  margin: 24px 0;
+  margin-bottom: 4px;
+}
+.listOperater button {
+  margin-right: 10px;
+}
+.listOperater .visual {
+  display: none;
+}
+.completedList {
+  background-color: var(--medium8);
+  border-radius: 5px;
+  border: 2.5px solid var(--medium1);
+  margin-top: 24px;
+}
+.listOperater {
+  margin: 24px 0;
+  margin-bottom: 4px;
+}
+.listOperater button {
+  margin-right: 10px;
+  color: var(--secondary1);
+}
+.listOperater button:hover {
+  background-color: var(--primary1);
+  color: var(--medium1);
+}
+.listOperater .visual {
+  display: none;
 }
