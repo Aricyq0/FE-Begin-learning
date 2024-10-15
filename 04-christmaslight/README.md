@@ -1,6 +1,6 @@
 # Project Name: Christmas Lights Effect
 
-**Read this in other languages: [简体中文](README_zh.md),[English](README.md)**
+**Read this in other languages: [简体中文](README_zh.md), [English](README.md)**
 
 ## Project Overview
 
