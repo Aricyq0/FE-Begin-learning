@@ -1,55 +1,45 @@
-# 项目名称：圣诞灯光效果(Christmas Lights)
+# Project Name: Christmas Lights Effect
 
-## 项目简介
+**Read this in other languages: [简体中文](README_zh.md),[English](README.md)**
 
-这是一个简单的圣诞灯光效果的 React 应用程序。用户可以通过点击按钮来切换灯光的开关状态，从而控制灯光的动画效果。
+## Project Overview
 
-插入实现图片：
+This is a simple React application that simulates Christmas lights. Users can toggle the lights on and off by clicking a button, controlling the animation effects.
 
-![Christmas Lights](./ChristmasLight.jpg)
+## Features
 
-## 特性
+- User interface built with React and Bootstrap
+- Toggle lights on and off with a button
+- Colored circles represent different lights
+- Animation effects adjust to the lights' on/off state
 
-- 使用 React 和 Bootstrap 创建用户界面
-- 通过按钮切换灯光的开和关
-- 不同颜色的圆形代表不同的灯光
-- 动画效果自适应灯光开关状态
-
-## 技术栈
+## Tech Stack
 
 - React
 - Bootstrap
 - CSS
 
-## 安装步骤
+## Installation Steps
 
-1. 确保你已经安装了 Node.js 和 npm。
-2. 克隆或下载该项目到本地。
-3. 进入项目目录并运行以下命令安装依赖：
+1. Make sure you have Node.js and npm installed.
+2. Clone or download the project to your local machine.
+3. Navigate to the project directory and run the following command to install dependencies:
    ```bash
    npm install
    ```
-4. 启动项目：
+4. Start the project:
    ```bash
    npm start
    ```
-5. 打开浏览器访问 `http://localhost:3000` 查看应用。
+5. Open your browser and navigate to `http://localhost:3000` to view the application.
 
-## 使用说明
+## Usage Instructions
 
-- 点击按钮可以切换灯光的状态（开/关）。
-- 当灯光关闭时，圆形的背景颜色会变为深色。
-- 当灯光开启时，灯光将恢复动画效果。
+- Click the button to toggle the light status (on/off).
+- When the lights are off, the background color of the circles changes to a darker color.
+- When the lights are on, they will resume the animation effects.
 
-## 代码结构
+## Code Structure
 
-- `App.js`：主应用文件，包含灯光控制逻辑和组件结构。
-- `App.css`：样式文件，可以自定义圆形灯光的样式和布局。
-
-## 贡献
-
-欢迎任何形式的贡献，您可以通过提交问题或拉取请求来参与项目。
-
-## 许可证
-
-本项目使用 MIT 许可证，详细信息请查看 LICENSE 文件。
+- `App.js`: Main application file containing the light control logic and component structure.
+- `App.css`: Stylesheet for customizing the appearance and layout of the circles.
