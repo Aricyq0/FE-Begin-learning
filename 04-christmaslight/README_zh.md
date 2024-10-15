@@ -6,7 +6,7 @@
 
 这是一个简单的圣诞灯光效果的 React 应用程序。用户可以通过点击按钮来切换灯光的开关状态，从而控制灯光的动画效果。
 
-![Christmas Lights](./ChristmasLight.jpg)
+![Christmas Lights](./public/ChristmasLight.jpg)
 
 ## 特性
 

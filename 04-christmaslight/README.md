@@ -6,6 +6,8 @@
 
 This is a simple React application that simulates Christmas lights. Users can toggle the lights on and off by clicking a button, controlling the animation effects.
 
+![Christmas Lights Effect](./public/ChristmasLight.jpg)
+
 ## Features
 
 - User interface built with React and Bootstrap
