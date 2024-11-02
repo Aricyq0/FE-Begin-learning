@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "碧波荡漾主题",
+    "version": "1.0",
+    "description": "基于色卡的碧波荡漾Chrome主题（浅色背景）。",
+    "theme": {
+      "colors": {
+        "frame": [164, 215, 208],
+        "toolbar": [140, 200, 195],
+        "ntp_text": [0, 0, 0],
+        "ntp_link": [0, 0, 255],
+        "ntp_section": [180, 225, 220],
+        "button_background": [0, 140, 150],
+        "button_text": [0, 0, 0]
+      },
+      "tints": {
+        "buttons": [0.33, 0.5, 0.47]
+      },
+      "properties": {
+        "ntp_background_alignment": "bottom"
+      }
+    }
+  }
+  
+  

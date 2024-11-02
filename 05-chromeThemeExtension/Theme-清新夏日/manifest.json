@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "清新夏日主题",
+    "version": "1.0",
+    "description": "基于色卡的清新夏日Chrome主题。",
+    "theme": {
+      "colors": {
+        "frame": [254, 228, 211],
+        "toolbar": [253, 186, 160],
+        "ntp_text": [0, 0, 0],
+        "ntp_link": [0, 0, 255],
+        "ntp_section": [248, 200, 160],
+        "button_background": [255, 255, 255],
+        "button_text": [0, 0, 0]
+      },
+      "tints": {
+        "buttons": [0.33, 0.5, 0.47]
+      },
+      "properties": {
+        "ntp_background_alignment": "bottom"
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  

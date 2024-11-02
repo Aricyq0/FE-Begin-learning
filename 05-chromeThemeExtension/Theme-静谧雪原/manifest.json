@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "静谧雪原主题",
+  "version": "1.0",
+  "description": "基于色卡的静谧雪原Chrome主题。",
+  "theme": {
+    "colors": {
+      "frame": [237, 237, 237],
+      "toolbar": [98, 118, 165],
+      "ntp_text": [0, 0, 0],
+      "ntp_link": [0, 0, 255],
+      "ntp_section": [178, 205, 212],
+      "button_background": [242, 217, 205],
+      "button_text": [0, 0, 0]
+    },
+    "tints": {
+      "buttons": [0.33, 0.5, 0.47]
+    },
+    "properties": {
+      "ntp_background_alignment": "bottom"
+    }
+  }
+}

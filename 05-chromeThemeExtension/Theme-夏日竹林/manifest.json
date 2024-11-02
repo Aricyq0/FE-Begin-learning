@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "夏日竹林主题",
+    "version": "1.0",
+    "description": "基于色卡的夏日竹林Chrome主题。",
+    "theme": {
+      "colors": {
+        "frame": [224,238,213],
+        "toolbar": [195,217,177],
+        "tab_background_text": [112,138,97],
+        "tab_background_separator": [255, 255, 255],
+        "tab_text": [56,69,49],
+        "bookmark_text": [56,69,49],
+        "bookmark_text_selected": [255, 255, 255],
+        "ntp_background": [224,238,213],
+        "ntp_text": [56,69,49],
+        "ntp_link": [56,69,49],
+        "ntp_section": [195,217,217],
+        "button_background": [56,69,49],
+        "button_text": [0, 0, 0]
+      },
+      "tints": {
+        "buttons": [0.33, 0.5, 0.47]
+      },
+      "properties": {
+        "ntp_background_alignment": "bottom"
+      }
+    }
+  }
+  
+  

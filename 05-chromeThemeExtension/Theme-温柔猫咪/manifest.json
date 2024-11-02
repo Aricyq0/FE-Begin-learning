@@ -1,0 +1,42 @@
+{
+    "manifest_version": 3,
+    "name": "猫咪的温柔主题",
+    "version": "1.0",
+    "description": "基于色卡的猫咪的温柔Chrome主题。",
+    "theme": {
+      "colors": {
+        "frame": [252,240,228],
+        "toolbar": [245, 198, 152],
+        "tab_background_text": [67,62,60],
+        "tab_background_separator": [255, 255, 255],
+        "tab_text": [254,254,254],
+        "tab_inactive_text": [0, 0, 0],
+        "bookmark_text": [67,62,60],
+        "bookmark_text_selected": [255, 255, 255],
+        "ntp_background": [252,240,228],
+        "ntp_text": [67,0,0],
+        "ntp_link": [67,62,60],
+        "ntp_section": [252, 240, 228],
+        "button_background": [240, 214, 197],
+        "button_text": [0, 0, 0]
+      },
+      "tints": {
+        "buttons": [0.33, 0.5, 0.47]
+      },
+      "properties": {
+        "ntp_background_alignment": "bottom"
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "舒心骑行",
+    "version": "1.0",
+    "description": "基于色卡的舒心骑行Chrome主题。",
+    "theme": {
+      "colors": {
+        "frame": [253,246,236],
+        "toolbar": [197,189,186],
+        "tab_background_text": [148,146,151],
+        "tab_background_separator": [255, 255, 255],
+        "tab_text": [0,0,0],
+        "bookmark_text": [0,0,0],
+        "bookmark_text_selected": [255, 255, 255],
+        "ntp_background": [253,246,236],
+        "ntp_text": [148,146,151],
+        "ntp_link": [148,146,151],
+        "ntp_section": [197,189,186],
+        "button_background": [148,146,151],
+        "button_text": [0, 0, 0]
+      },
+      "tints": {
+        "buttons": [0.33, 0.5, 0.47]
+      },
+      "properties": {
+        "ntp_background_alignment": "bottom"
+      }
+    }
+  }
