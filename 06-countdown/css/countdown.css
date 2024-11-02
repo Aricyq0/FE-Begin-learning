@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "supperBubble";
+  src: url(../fonts/SuperBubble-Rpaj3.ttf);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  color: #fff9df;
+  font-family: "supperBubble";
+  font-family: monospace, serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(215, 215, 215, 0.45);
+  z-index: -1;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  /* 将图标颜色反转为白色 */
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  /* 将图标颜色反转为白色 */
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "supperBubble";
+  color: #7b7cac;
+}
+.input-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  margin-top: 30px;
+  line-height: 60px;
+  box-sizing: border-box;
+}
+.input-box p {
+  margin: 0;
+  font-size: 18px;
+  height: 60px;
+  color: #587aa7;
+}
+.input-box .input-date,
+.input-box .input-time,
+.input-box .start-btn {
+  margin-left: 20px;
+}
+.input-box .input-date input,
+.input-box .input-time input {
+  color: #f5f5f5;
+  background-color: #fdc55e;
+  border: #f5f5f5;
+  border-radius: 4px;
+  padding: 0 10px;
+  height: 30px;
+  margin: 10px 0;
+}
+.input-box .input-date input:focus,
+.input-box .input-time input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #fdc55e;
+}
+.start-btn {
+  background-color: #7b7cac;
+  color: #fdc55e;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 15px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 20px;
+  padding: 0 12px;
+  transition: all 0.3s ease;
+}
+.start-btn:hover {
+  background-color: #3e8e41;
+  color: #fff9df;
+}
+.countdown-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+.countdown-box div {
+  margin: 0 40px;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.countdown-box div #days,
+.countdown-box div #hours,
+.countdown-box div #minutes,
+.countdown-box div #seconds {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.countdown-box div #days {
+  color: #fff9df;
+}
+.countdown-box div #hours {
+  color: #587aa7;
+}
+.countdown-box div #minutes {
+  color: #95b0b7;
+}
+.countdown-box div #seconds {
+  color: #fdc55e;
+}
+.countdown-box div span {
+  display: block;
+  color: white;
+}
+.countdown-box .days {
+  background-color: #7b7cac;
+}
+.countdown-box .hours {
+  background-color: #b9e0c1;
+}
+.countdown-box .minutes {
+  background-color: #fdc55e;
+}
+.countdown-box .seconds {
+  background-color: #3e8e41;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/countdown.css" />
+  </head>
+  <body>
+    <h1>Countdown Timer</h1>
+    <div class="input-box">
+      <p>Pick a date and time for the countdown:</p>
+      <div class="input-date">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" />
+      </div>
+      <div class="input-time">
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" value="00:00" />
+      </div>
+
+      <button class="start-btn">Start</button>
+    </div>
+    <div class="countdown-box" id="countdown-box">
+      <div class="days">
+        <span id="days">00</span>
+        <span>Days</span>
+      </div>
+
+      <div class="hours">
+        <span id="hours">00</span>
+        <span>Hours</span>
+      </div>
+
+      <div class="minutes">
+        <span id="minutes">00</span>
+        <span>Minutes</span>
+      </div>
+
+      <div class="seconds">
+        <span id="seconds">00</span>
+        <span>Seconds</span>
+      </div>
+    </div>
+  </body>
+  <script src="bootstrap/bootstrap.min.js"></script>
+  <script src="js/countdown.js"></script>
+</html>
