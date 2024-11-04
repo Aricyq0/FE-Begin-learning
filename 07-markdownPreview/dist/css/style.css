@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "iconfont";
+  /* Project id  */
+  src: url("font/iconfont.ttf?t=1723596951450") format("truetype");
+}
+:root {
+  --primary1: #fffcf2ff;
+  --primary2: #ccc5b9ff;
+  --primary3: #403d39ff;
+  --primary4: #252422ff;
+  --primary5: #eb5e28ff;
+  --medium1: #f8f9faff;
+  --medium2: #e9ecefff;
+  --medium3: #dee2e6ff;
+  --medium4: #ced4daff;
+  --medium5: #adb5bdff;
+  --medium6: #6c757dff;
+  --medium7: #495057ff;
+  --medium8: #343a40ff;
+  --medium9: #212529ff;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-width: 1080px;
+  min-height: 600px;
+  height: 100vh;
+}
+@media screen and (max-width: 1440px) and (max-height: 1080px) {
+  .markdownEditor {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1440px) and (min-height: 1081px) {
+  .markdownEditor {
+    height: 80%;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .markdownEditor {
+    width: 80%;
+    height: 70%;
+  }
+}
+@media screen and (min-width: 1921px) {
+  .markdownEditor {
+    width: 50%;
+    height: 72%;
+  }
+}
+.markdownEditor {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding-top: 44px;
+  background: var(--medium2);
+  box-shadow: 0 15px 25px rgba(67, 67, 67, 0.6);
+  overflow: hidden;
+}
+.markdownEditor .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 44px;
+  background-color: #4f4f4f;
+}
+.markdownEditor .header #reset {
+  float: left;
+  margin: 0 28px;
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.markdownEditor .header #reset:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: #656565;
+  color: white;
+}
+.markdownEditor .header #export {
+  position: absolute;
+  top: 0;
+  right: 36px;
+  width: 100px;
+  color: var(--medium1);
+  font-size: 14px;
+}
+.markdownEditor .header #export h4 {
+  position: relative;
+  width: 100%;
+  height: 44px;
+  padding-left: 10px;
+  font-weight: 400;
+  line-height: 44px;
+  display: inline-block;
+}
+.markdownEditor .header #export h4::after {
+  display: inline-block;
+  position: absolute;
+  height: 44px;
+  top: 0;
+  right: 30px;
+  content: "\e662";
+  font-family: "iconfont";
+  font-size: 12px;
+  color: var(--medium1);
+  z-index: 20;
+}
+.markdownEditor .header #export .dropdown-content {
+  display: none;
+  padding-left: 10px;
+}
+.markdownEditor .header #export .dropdown-content li {
+  list-style: none;
+  height: 36px;
+  line-height: 36px;
+  background-color: #4f4f4f;
+  color: var(--medium1);
+}
+.markdownEditor .header #export .dropdown-content li a {
+  padding-left: 10px;
+  text-decoration: none;
+  color: var(--medium1);
+  font-size: 14px;
+}
+.markdownEditor .header #export .dropdown-content li:hover {
+  background-color: var(--primary5);
+}
+.markdownEditor .header #export:hover .dropdown-content {
+  display: block;
+}
+.markdownEditor .content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.markdownEditor .content .edit,
+.markdownEditor .content .preview {
+  height: 100%;
+}
+.markdownEditor .content .edit {
+  width: 50%;
+  overflow: auto;
+}
+.markdownEditor .content .edit #editor {
+  width: 100%;
+  height: 100%;
+}
+.markdownEditor .content .preview {
+  width: 50%;
+}
+.markdownEditor .content .preview #output {
+  padding-right: 12px;
+  width: 100%;
+  height: 100%;
+  padding-left: 12px;
+  overflow: auto;
+}

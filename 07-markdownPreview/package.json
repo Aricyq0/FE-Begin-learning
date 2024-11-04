@@ -1,0 +1,32 @@
+{
+  "name": "07-markdownPreview",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack serve --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ace-builds": "^1.35.4",
+    "bootstrap": "^5.3.3",
+    "dompurify": "^3.1.6",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "marked": "^14.0.0",
+    "puppeteer": "^23.0.2"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "node-sass": "^9.0.0",
+    "sass-loader": "^16.0.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
