@@ -1,0 +1,27 @@
+.search-container-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  width: 100vw;
+  height: 100px;
+  z-index: 4;
+}
+.search-container {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 60px;
+  margin-top: 0;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  border-radius: 32px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  z-index: 999;
+}
+.ant-input-outlined {
+  border: none;
+  padding: 8px 8px;
+  border-radius: 8px 8px 0 0;
+}
