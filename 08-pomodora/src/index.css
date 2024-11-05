@@ -1,0 +1,205 @@
+@font-face {
+  font-family: 'Abhaya Libre';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/abhayalibre/v17/e3tmeuGtX-Co5MNzeAOqinEgew.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Abhaya Libre';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/abhayalibre/v17/e3t5euGtX-Co5MNzeAOqinEYj2ryqg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Abhaya Libre';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/abhayalibre/v17/e3t5euGtX-Co5MNzeAOqinEYo23yqg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Abhaya Libre';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/abhayalibre/v17/e3t5euGtX-Co5MNzeAOqinEYx2zyqg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Abhaya Libre';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/abhayalibre/v17/e3t5euGtX-Co5MNzeAOqinEY22_yqg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Irish Grover';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/irishgrover/v23/buExpoi6YtLz2QW7LA4flVgf-A.ttf) format('truetype');
+}
+:root {
+  --grad0: #ffffff;
+  --grad1: #f2f2f2;
+  --grad2: #e6e6e6;
+  --grad3: #cccccc;
+  --grad4: #b3b3b3;
+  --grad5: #999999;
+  --grad6: #7f7f7f;
+  --grad7: #666666;
+  --grad8: #4d4d4d;
+  --grad9: #333333;
+  --grad10: #1a1a1a;
+  --grad11: #000000;
+  --grad0-rgb: 255, 255, 255;
+  /* #ffffff */
+  --grad1-rgb: 242, 242, 242;
+  /* #f2f2f2 */
+  --grad2-rgb: 230, 230, 230;
+  /* #e6e6e6 */
+  --grad3-rgb: 204, 204, 204;
+  /* #cccccc */
+  --grad4-rgb: 179, 179, 179;
+  /* #b3b3b3 */
+  --grad5-rgb: 153, 153, 153;
+  /* #999999 */
+  --grad6-rgb: 127, 127, 127;
+  /* #7f7f7f */
+  --grad7-rgb: 102, 102, 102;
+  /* #666666 */
+  --grad8-rgb: 77, 77, 77;
+  /* #4d4d4d */
+  --grad9-rgb: 51, 51, 51;
+  /* #333333 */
+  --grad10-rgb: 26, 26, 26;
+  /* #1a1a1a */
+  --grad11-rgb: 0, 0, 0;
+  /* #000000 */
+  --overlay-opacity: 0.3;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  min-width: 1190px;
+  box-sizing: border-box;
+  padding: 48px;
+  background: url(../public/bg-images/ocean.jpg) no-repeat center center;
+  background-size: cover;
+  transition: background-image 1s ease-in-out;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(var(--grad10-rgb), var(--overlay-opacity));
+}
+#root {
+  width: 100%;
+  height: 100%;
+  font-family: Iowan Old style;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.slide-in-down {
+  animation: slide-in-down 1s ease-in-out both;
+}
+.slide-out-down {
+  animation: slide-out-down 0.2s ease-in-out both;
+}
+.fade-out {
+  animation: fade-out 1s ease-in-out both;
+}
+.fade-in {
+  animation: fade-in 0.2s ease-in-out both;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-out-right {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+@keyframes slide-in-down {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-out-down {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes pulse-dot {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}

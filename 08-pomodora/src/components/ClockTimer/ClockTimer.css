@@ -1,0 +1,145 @@
+.clock {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.clock .clock-title {
+  position: absolute;
+  top: 30%;
+  font-family: system-ui;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--grad1);
+  z-index: 2;
+}
+.clock .clock-timer {
+  display: flex;
+  position: relative;
+  width: 15%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+}
+.clock .clock-timer .clock-timer-text {
+  font-family: system-ui;
+  color: var(--grad1);
+  font-size: 100px;
+  font-weight: 700;
+}
+.clock .clock-timer .control-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.clock .clock-timer .control-btn .pauseBtn,
+.clock .clock-timer .control-btn .runningBtn,
+.clock .clock-timer .control-btn .resetBtn {
+  /* 背景透明 */
+  height: 40px;
+  background: rgba(var(--grad1-rgb), 0.1);
+  color: var(--grad1);
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 24px;
+  border: 1px solid var(--grad1);
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-right: 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.clock .clock-timer .control-btn .pauseBtn:hover,
+.clock .clock-timer .control-btn .runningBtn:hover,
+.clock .clock-timer .control-btn .resetBtn:hover {
+  background: var(--grad1);
+  color: var(--grad8);
+}
+.clock .clock-timer .control-btn .resetBtn {
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-right: 0;
+}
+.clock .clock-timer .control-btn .resetBtn svg {
+  width: 24px;
+  height: 24px;
+  padding-top: 4px;
+  fill: var(--grad1);
+}
+.clock .clock-timer .control-btn .resetBtn:hover svg {
+  fill: var(--grad8);
+}
+.clock .clock-timer .control-btn .hvr-bounce-to-top::before {
+  background: var(--grad1);
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
+  background: rgba(var(--grad2-rgb), 0.8);
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+  z-index: 10;
+  overflow: hidden;
+  p {
+    padding: 25% 20px;
+    font-size: 24px;
+    color: var(--grad8);
+  }
+  .popup-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    button {
+      height: 100%;
+      line-height: 60px;
+      text-align: center;
+      background: rgba(var(--grad4-rgb), 0.5);
+      color: var(--grad1);
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+      &:hover {
+        color: var(--grad8);
+      }
+    }
+    .quarter {
+      width: 25%;
+      background: var(--grad8);
+      color: var(--grad1);
+    }
+    .full-line {
+      width: 100%;
+      background: var(--grad8);
+      color: var(--grad1);
+    }
+    .three-quarters {
+      width: 75%;
+      background: var(--grad9);
+      color: var(--grad1);
+    }
+  }
+}
+
+.hvr-bounce-to-right::before {
+  background: var(--grad1);
+}

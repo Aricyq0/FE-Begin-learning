@@ -1,0 +1,367 @@
+.clock-type-container {
+  position: absolute;
+  top: 25%;
+  right: 48px;
+}
+.clock-type-container .clock-type-header {
+  text-align: left;
+  font-family: "Irish Grover";
+  font-size: 32px;
+  color: var(--grad1);
+  width: 302px;
+  height: 50px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+}
+.clock-type-container .clock-type {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  height: 50px;
+  font-family: "Abhaya Libre";
+  padding-right: 40px;
+  padding-left: 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border-radius: 12px;
+  z-index: 10;
+  cursor: pointer;
+}
+.clock-type-container .clock-type .type-name p {
+  line-height: 50px;
+  color: var(--grad1);
+  font-size: 20px;
+  font-weight: 600;
+}
+.clock-type-container .clock-type .type-name button {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  transform: translateY(-50%);
+  width: 40px;
+  padding: 19px;
+  background: none;
+  border: none;
+  box-sizing: border-box;
+}
+.clock-type-container .clock-type .type-name a svg path {
+  stroke: var(--grad6);
+}
+.clock-type-container .clock-type .type-name a:hover svg path {
+  stroke: var(--grad9);
+}
+
+.clock-type-container .clock-type:hover .delete-clock-type {
+  display: block;
+}
+.clock-type-container .clock-type:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.clock-type-container .clock-type .type-setting {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 92px;
+  height: 30px;
+  font-family: "Abhaya Libre";
+}
+.clock-type-container .clock-type .type-setting .time-control {
+  background: none;
+  border: none;
+}
+.clock-type-container .clock-type .type-setting span {
+  font-size: 22px;
+  line-height: 30px;
+  color: var(--grad0);
+  font-weight: 500;
+}
+.clock-type-container .clock-type .type-setting button {
+  height: 24px;
+}
+.clock-type-container .clock-type .modal {
+  position: absolute;
+  top: 120%;
+  right: 10%;
+  width: 280px;
+  height: 140px;
+  padding: 22px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background: rgba(var(--grad1-rgb), 1);
+  z-index: 999;
+}
+.clock-type-container .clock-type .modal::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 70%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 12px solid var(--grad1);
+}
+.clock-type-container .clock-type .modal .modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.clock-type-container .clock-type .modal .modal-content .modal-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 16px;
+  box-sizing: border-box;
+}
+.clock-type-container .clock-type .modal .modal-content .modal-buttons button {
+  border: none;
+  flex: 1;
+  height: 30px;
+  margin: 10px;
+  padding: 0;
+  background: transparent;
+  border: 1px solid var(--grad8);
+}
+.clock-type-container
+  .clock-type
+  .modal
+  .modal-content
+  .modal-buttons
+  button:hover {
+  color: var(--grad1);
+}
+.clock-type-container
+  .clock-type
+  .modal
+  .modal-content
+  .modal-buttons
+  .hvr-bounce-to-top::before {
+  background: var(--grad8);
+}
+.clock-type-container .active {
+  background-color: rgba(var(--grad1-rgb), 0.6);
+}
+.clock-type-container .active .type-name p {
+  color: var(--grad9);
+}
+.clock-type-container .active .type-setting span {
+  color: var(--grad9);
+}
+.clock-type-container .add-clock-type {
+  width: 320px;
+  height: 40px;
+  margin-top: 12px;
+  line-height: 40px;
+  font-family: "Abhaya Libre";
+  text-align: center;
+  color: var(--grad9);
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgba(var(--grad1-rgb), 0.6);
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+  z-index: 6;
+}
+.clock-type-container .add-clock-type:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.clock-type-container.show {
+  animation: slide-in-right 1s ease-in-out both;
+}
+.clock-type-container.hide {
+  animation: slide-out-right 1s ease-in-out both;
+}
+.add-clock-type-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px 20px;
+  margin-top: 40px;
+  width: 320px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: rgba(var(--grad1-rgb), 0.8);
+  color: var(--grad8);
+}
+.add-clock-type-form h3 {
+  font-family: "Irish Grover";
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.add-clock-type-form .cancel-form {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.add-clock-type-form .cancel-form svg path {
+  stroke: var(--grad8);
+}
+.add-clock-type-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+}
+.add-clock-type-form form .form-name,
+.add-clock-type-form form .form-time {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 14px;
+  height: 32px;
+  line-height: 32px;
+}
+.add-clock-type-form form .form-name label,
+.add-clock-type-form form .form-time label {
+  text-align: right;
+  font-size: 16px;
+}
+.add-clock-type-form form .form-name input,
+.add-clock-type-form form .form-time input {
+  width: 220px;
+  border: none;
+  background: transparent;
+  border: 1px solid var(--grad8);
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding: 4px 8px;
+}
+.add-clock-type-form form .form-name input:focus,
+.add-clock-type-form form .form-time input:focus {
+  outline: none;
+  background: transparent;
+  border: 2px solid var(--grad1);
+}
+.add-clock-type-form form .form-timer-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 16px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.add-clock-type-form form .form-timer-type p {
+  padding-bottom: 4px;
+  font-size: 16px;
+}
+.add-clock-type-form form .form-timer-type div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+}
+.add-clock-type-form form .form-timer-type div div {
+  display: flex;
+  align-items: center;
+  padding-bottom: 4px;
+}
+.add-clock-type-form form .form-timer-type div div:nth-child(2) {
+  justify-content: flex-end;
+}
+.add-clock-type-form form .form-timer-type div div input[type="radio"] {
+  display: none;
+}
+.add-clock-type-form form .form-timer-type div div input[type="radio"] + label {
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.add-clock-type-form
+  form
+  .form-timer-type
+  div
+  div
+  input[type="radio"]
+  + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border: 1.5px solid var(--grad4);
+  border-radius: 50%;
+  background: transparent;
+}
+.add-clock-type-form
+  form
+  .form-timer-type
+  div
+  div
+  input[type="radio"]
+  + label::after {
+  content: "";
+  position: absolute;
+  left: 4.5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--grad8);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.add-clock-type-form
+  form
+  .form-timer-type
+  div
+  div
+  input[type="radio"]
+  + label:hover::after {
+  opacity: 1;
+}
+.add-clock-type-form
+  form
+  .form-timer-type
+  div
+  div
+  input[type="radio"]:checked
+  + label::after {
+  opacity: 1;
+}
+.add-clock-type-form
+  form
+  .form-timer-type
+  div
+  div
+  input[type="radio"]:checked
+  + label::before {
+  border-color: var(--grad8);
+}
+.add-clock-type-form form button[type="submit"] {
+  display: block;
+  background-color: rgba(var(--grad7-rgb), 0.9);
+  font-family: "Abhaya Libre";
+  color: var(--grad1);
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 220px;
+  height: 30px;
+  margin-left: calc(100% - 220px);
+  border-radius: 15px;
+  border: none;
+}
