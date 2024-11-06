@@ -1,0 +1,15 @@
+export const Color = {
+  green: "#64ea91",
+  blue: "#8fc9fb",
+  purple: "#d897eb",
+  red: "#f69899",
+  yellow: "#f8c82e",
+  orange: "#fa8c16",
+  pink: "#ff99cc",
+  cyan: "#91d5ff",
+  peach: "#f797d6",
+  borderBase: "#e5e5e5",
+  borderSplit: "#f4f4f4",
+  grass: "#d6fbb5",
+  sky: "#c1e0fc",
+};

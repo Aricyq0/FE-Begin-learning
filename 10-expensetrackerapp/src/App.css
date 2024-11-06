@@ -1,0 +1,82 @@
+/* Fonts */
+@font-face {
+  font-family: "DM Serif Display";
+  src: url("../public/Fonts/DMSerifDisplay-Regular.ttf");
+}
+
+/* Main app */
+.header {
+  background: #fff;
+  position: sticky;
+  padding-bottom: 12px;
+  padding-left: 24px !important;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+.content {
+  /* margin: 24px 16px; */
+  padding: 24px;
+}
+.triger-btn {
+  font-size: 16px;
+  width: 50px;
+  border-radius: 50%;
+}
+/* Sider */
+
+.sider {
+  height: 100vh;
+  position: sticky !important;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.logo {
+  color: #1677ff;
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+.menu-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.ant-menu-item-selected {
+  background-color: #1677ff !important;
+  color: #fff !important;
+}
+
+/* Header */
+.header-icon {
+  /* background: #d2e3c8; */
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 15px;
+  /* color: #4f6f52; */
+  cursor: pointer;
+}
+
+/* ReviewGroup */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+}
+.card:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card-title {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "DM Sans Display";
+}
+
+/* Button style */
+.padding--inline {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
