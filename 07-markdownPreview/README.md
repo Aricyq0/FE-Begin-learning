@@ -1,6 +1,6 @@
 # markdownreview
 
-**Other language versions: [中文](README_zh.md)**
+**Other language versions: [简体中文](README_zh.md)**
 
 ## Introduction
 
@@ -41,25 +41,19 @@ This project is a Markdown editor that allows users to input Markdown syntax and
 
 ## Usage Instructions
 
-1. Clone the project:
-
-   ```bash
-   git clone <repository-url>
-   ```
-
-2. Install dependencies:
+1. Install dependencies:
 
    ```bash
    npm install
    ```
 
-3. Start the development server:
+2. Start the development server:
 
    ```bash
    npm start
    ```
 
-4. Open your browser and visit `http://localhost:3000`.
+3. Open your browser and visit `http://localhost:3000`.
 
 ## Run Scripts
 

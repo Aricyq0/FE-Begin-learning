@@ -1,4 +1,4 @@
-# Chrome 主题插件说明文档（中文版本）
+# 05: Chrome 主题插件
 
 **其他语言版本：[English](README.md)**
 

@@ -1,8 +1,8 @@
-# Project Name: Christmas Lights Effect
+# 04:Christmas Lights Effect
 
-**Read this in other languages: [简体中文](README_zh.md), [English](README.md)**
+**Read this in other languages: [简体中文](README_zh.md)**
 
-## Project Overview
+## Overview
 
 This is a simple React application that simulates Christmas lights. Users can toggle the lights on and off by clicking a button, controlling the animation effects.
 

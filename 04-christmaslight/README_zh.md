@@ -1,6 +1,6 @@
-# 项目名称：圣诞灯光效果(Christmas Lights)
+# 04：圣诞灯光效果
 
-**其他语言版本：[English](README.md), [简体中文](README_zh.md)**
+**其他语言版本：[English](README.md)**
 
 ## 项目简介
 

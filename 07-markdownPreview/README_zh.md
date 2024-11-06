@@ -41,25 +41,19 @@
 
 ## 使用说明
 
-1. 克隆项目：
-
-   ```bash
-   git clone <repository-url>
-   ```
-
-2. 安装依赖：
+1. 安装依赖：
 
    ```bash
    npm install
    ```
 
-3. 启动开发服务器：
+2. 启动开发服务器：
 
    ```bash
    npm start
    ```
 
-4. 打开浏览器并访问 `http://localhost:3000`。
+3. 打开浏览器并访问 `http://localhost:3000`。
 
 ## 运行脚本
 

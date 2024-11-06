@@ -1,6 +1,6 @@
-# Chrome Theme Plugin Documentation (English Version)
+# 05: Chrome Theme Plugin
 
-**Read this in other languages: [中文版](README_zh.md)**
+**Read this in other languages: [中文](README_zh.md)**
 
 ## Project Description
 

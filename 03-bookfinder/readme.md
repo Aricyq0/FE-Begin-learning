@@ -1,47 +1,49 @@
-# Book Finder App
+# 03: Book Finder App
 
-## 简介
+**Other languages:[简体中文](README_zh.md)**
 
-Book Finder App 是一个简单的书籍搜索应用，用户可以输入书名或作者，应用将通过 Google Books API 查询并显示相关的书籍信息。
+## Introduction
 
-## 项目结构
+Book Finder App is a simple book search application where users can input a book title or author, and the app will query the Google Books API to display relevant book information.
+
+## Project Structure
 
 ```
 /BookFinderApp
 │
 ├── src/
-│   ├── bootstrap.min.css        # Bootstrap 样式文件
-│   ├── style.css                # 自定义样式文件
-│   ├── bootstrap.min.js         # Bootstrap JavaScript 文件
-│   └── script.js                # 应用的主要 JavaScript 文件
+│   ├── bootstrap.min.css        # Bootstrap style file
+│   ├── style.css                # Custom style file
+│   ├── bootstrap.min.js         # Bootstrap JavaScript file
+│   └── script.js                # Main JavaScript file for the application
 │
-└── index.html                   # 应用的主要 HTML 文件
+└── index.html                   # Main HTML file for the application
 ```
 
-## 功能
+## Features
 
-- **搜索书籍**：用户可以通过输入书名或作者来搜索书籍。
-- **展示书籍信息**：搜索结果将以书籍封面、书名、作者、出版社和出版日期的形式展示。
-- **加载指示器**：在搜索期间，应用会显示一个加载指示器以提示用户。
+- **Search for Books**: Users can search for books by entering a title or an author.
+- **Display Book Information**: Search results will be displayed with book covers, titles, authors, publishers, and publication dates.
+- **Loading Indicator**: The app will show a loading indicator during the search to inform the user.
 
-## 使用说明
+## Instructions
 
-1. **API 密钥**：
+1. **API Key**:
 
-   - 为了使用 Google Books API，您需要先申请 API 密钥。访问 [Google Books API](https://developers.google.com/books/docs/v1/using) 页面，按照说明申请。
+   - To use the Google Books API, you need to apply for an API key. Visit the [Google Books API](https://developers.google.com/books/docs/v1/using) page and follow the instructions to apply.
 
-   - 申请完成后，将获得一个 API 密钥，需要在 `/src/script.js` 中将`api_key`变量的值替换为自己的 API 密钥。
+   - After the application is completed, you will receive an API key that you need to replace the value of the `api_key` variable in `/src/script.js` with your own API key.
 
-1. **打开 `index.html` 文件**：
+2. **Open `index.html` file**:
 
-   打开 `index.html` 文件可以使用任何现代浏览器，例如 Chrome、Firefox 或 Edge。
+   You can open the `index.html` file using any modern browser such as Chrome, Firefox, or Edge.
 
-1. **进行书籍搜索**：
+3. **Perform a Book Search**:
 
-   - 在搜索框中输入书名或作者。
-   - 点击搜索按钮或直接按 Enter 键。
-   - 稍等片刻，您将看到搜索结果。
+   - Enter a book title or an author in the search box.
+   - Click the search button or press the Enter key directly.
+   - Wait a moment to see the search results.
 
-## 注意事项
+## Notes
 
-- 此应用未使用 Node.js，因此无需 Node 环境。
+- This application does not use Node.js, so no Node environment is required.
