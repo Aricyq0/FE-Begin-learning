@@ -1,6 +1,6 @@
 # 07 markdownPreview
 
-**其他语言版本：[English](README.md)**
+[English](README.md) | 简体中文
 
 ## 介绍
 

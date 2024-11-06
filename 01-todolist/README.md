@@ -1,6 +1,6 @@
 # 01 Todo List
 
-**Other Languages: [简体中文](README_zh.md)**
+English | [简体中文](README_zh.md)
 
 ## Introduction
 

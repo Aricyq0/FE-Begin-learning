@@ -1,6 +1,6 @@
 # 10 Expense Tracking
 
-**Other language versions: [简体中文](README_zh.md)**
+English | [简体中文](README_zh.md)
 
 ## Project Overview
 

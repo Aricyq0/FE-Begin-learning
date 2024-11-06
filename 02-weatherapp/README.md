@@ -1,6 +1,6 @@
 # 02 Weather Query Application
 
-**Other languages:[简体中文](README_zh.md)**
+English | [简体中文](./README_zh.md)
 
 ## Overview
 

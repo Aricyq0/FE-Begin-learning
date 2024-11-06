@@ -1,6 +1,6 @@
 # 04 Christmas Lights Effect
 
-**Read this in other languages: [简体中文](README_zh.md)**
+English |[简体中文](README_zh.md)
 
 ## Overview
 

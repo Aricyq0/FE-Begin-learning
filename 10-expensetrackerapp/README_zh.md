@@ -1,10 +1,12 @@
 # 10 理财追踪应用
 
-**其他语言版本：[English](README.md)**
+[English](README.md) | 简体中文
 
 ## 项目简介
 
 这是一个费用追踪应用，通过这个应用，用户可以记录和管理他们的收入和支出。用户可以查看交易详情、生成报告以及可视化数据。
+
+![10-expensetrackerapp](../img-storage/10-expensetrackerapp.jpg)
 
 ## 目录结构
 

@@ -1,6 +1,6 @@
 # 06 Countdown
 
-**Read this in other languages: [简体中文](README_zh.md)**
+English | [简体中文](README_zh.md)
 
 ## Introduction
 

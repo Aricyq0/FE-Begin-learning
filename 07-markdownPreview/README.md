@@ -1,6 +1,6 @@
 # 07 markdownPreview
 
-**Other language versions: [简体中文](README_zh.md)**
+English | [简体中文](README_zh.md)
 
 ## Introduction
 

@@ -1,6 +1,6 @@
 # 03 Book Finder App
 
-**其他语言版本：[English](README.md)**
+English | [简体中文](README_zh.md)
 
 ## 简介
 

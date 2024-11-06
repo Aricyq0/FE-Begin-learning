@@ -1,6 +1,6 @@
 # 05 Chrome Theme Plugin
 
-**Read this in other languages: [中文](README_zh.md)**
+English | [中文](README_zh.md)
 
 ## Project Description
 

@@ -1,6 +1,6 @@
 # 08 Pomodoro App
 
-**Other languages: [简体中文](README_zh.md)**
+English | [简体中文](README_zh.md)
 
 ## Overview
 

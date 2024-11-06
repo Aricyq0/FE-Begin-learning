@@ -1,6 +1,6 @@
 # 01 待办清单
 
-**其他语言版本：[English](README.md)**
+[English](README.md) | 简体中文
 
 ## 项目介绍
 
