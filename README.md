@@ -1,4 +1,4 @@
-# Project List
+# Front-End Beginner Projects
 
 English | [简体中文](./README_zh.md)
 
