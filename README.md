@@ -104,3 +104,7 @@ This is an expense tracking application that allows users to record and manage i
 Reference Project: [zuiidea/antd-admin](https://github.com/zuiidea/antd-admin)
 
 ![Expense Tracker App](./img-storage/10-expensetrackerapp.jpg)
+
+## License
+
+This project is licensed under the [MIT license](./LICENSE).
