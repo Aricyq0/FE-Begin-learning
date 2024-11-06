@@ -85,7 +85,7 @@ This is a React-based Pomodoro application that allows users to manage work and 
 
 Project Source: [app-ideas/Pomodoro-Clock](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Pomodoro-Clock.md)
 
-![Pomodoro App](./img-storage/08-pomodora.jpg)
+![Pomodoro App](./img-storage/08-pomodoro.jpg)
 
 ---
 

@@ -85,7 +85,7 @@ Book Finder App 是一个简单的书籍搜索应用，用户可以输入书名�
 
 项目来源：[app-ideas/Pomodoro-Clock](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Pomodoro-Clock.md)
 
-![Pomodoro App](./img-storage/08-pomodora.jpg)
+![Pomodoro App](./img-storage/08-pomodoro.jpg)
 
 ---
 
