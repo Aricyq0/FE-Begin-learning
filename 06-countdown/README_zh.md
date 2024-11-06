@@ -1,10 +1,12 @@
-# 倒计时项目
+# 06 倒计时项目
 
 **其他语言版本：[English](README.md)**
 
 ## 项目介绍
 
 这是一个简单的倒计时应用程序，用户可以设置一个截止日期和时间，程序会实时更新倒计时的显示。代码使用原生 JavaScript 实现，并利用浏览器的 `localStorage` 功能保存用户的设置。
+
+![06-countdown](../img-storage/06-countdownapp.jpg)
 
 ## 功能
 

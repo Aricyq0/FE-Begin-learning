@@ -1,4 +1,4 @@
-# 04：圣诞灯光效果
+# 04 圣诞灯光效果
 
 **其他语言版本：[English](README.md)**
 
@@ -6,7 +6,7 @@
 
 这是一个简单的圣诞灯光效果的 React 应用程序。用户可以通过点击按钮来切换灯光的开关状态，从而控制灯光的动画效果。
 
-![Christmas Lights](./public/ChristmasLight.jpg)
+![04-christmaslight](../img-storage/04-christmaslight.jpg)
 
 ## 特性
 

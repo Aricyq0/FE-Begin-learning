@@ -1,18 +1,20 @@
-# 08: Pomodoro App
+# 08 番茄钟应用
 
-**Other languages: [简体中文](README_zh.md)**
+其他语言版本：[English](README.md)
 
-## Overview
+## 项目介绍
 
-This is a Pomodoro app built with React that allows users to manage work and break times using the Pomodoro technique, along with a selection of different white noise options to enhance the working atmosphere.
+这是一个基于 React 构建的番茄钟应用，可以通过定时番茄工作法来管理工作和休息时间，并选择不同的白噪音来提升工作氛围。
 
-## Features
+![08-pomodoro](../img-storage/08-pomodoro.jpg)
 
-- **Timer**: Set work and break durations, as well as add new work options, and switch automatically.
-- **Audio Control**: Offers various background white noise selections.
-- **Status Display**: Real-time display of the current status (such as working or resting) and a countdown timer.
+## 功能介绍
 
-## Project Structure
+- **定时器**：可以设置工作时间和休息时间，也可以新增工作选项，自动切换。
+- **音频控制**：提供多种背景白噪音选择。
+- **状态显示**：实时显示当前状态（如工作、休息）和倒计时。
+
+## 项目结构
 
 ```
 .
@@ -48,23 +50,23 @@ This is a Pomodoro app built with React that allows users to manage work and bre
     └── setupTests.js
 ```
 
-## Installation
+## 安装
 
-Run the following command in the project directory to install dependencies:
+在项目目录中运行以下命令安装依赖：
 
 ```bash
 npm install
 ```
 
-## Usage
+## 使用
 
-Start the development server:
+启动开发服务器：
 
 ```bash
 npm start
 ```
 
-Build the project:
+构建项目：
 
 ```bash
 npm run build

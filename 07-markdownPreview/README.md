@@ -1,10 +1,12 @@
-# markdownreview
+# 07 markdownPreview
 
 **Other language versions: [简体中文](README_zh.md)**
 
 ## Introduction
 
 This project is a Markdown editor that allows users to input Markdown syntax and preview it in real-time. It utilizes the Ace editor and Marked.js for parsing and displaying Markdown.
+
+![07-markdownPreview](../img-storage/07-markdownpreview.jpg)
 
 ## Directory Structure
 

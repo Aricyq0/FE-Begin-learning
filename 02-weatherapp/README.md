@@ -1,10 +1,12 @@
-# 02: Weather Query Application
+# 02 Weather Query Application
 
 **Other languages:[简体中文](README_zh.md)**
 
 ## Overview
 
 This is a weather query application that allows users to get current weather and forecasts for the next few days by entering a city name or postal code.
+
+![02-weatherapp](../img-storage/02-weatherapp.jpg)
 
 ## Features
 

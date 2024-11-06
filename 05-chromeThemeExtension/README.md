@@ -1,10 +1,12 @@
-# 05: Chrome Theme Plugin
+# 05 Chrome Theme Plugin
 
 **Read this in other languages: [中文](README_zh.md)**
 
 ## Project Description
 
 This project includes multiple custom theme plugins for the Chrome browser, aimed at providing users with a diverse visual experience to meet different personalization needs.
+
+![05-chromeThemeExtension](../img-storage/05-chromethemeextension.jpg)
 
 ## Plugin Overview
 

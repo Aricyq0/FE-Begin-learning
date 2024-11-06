@@ -1,10 +1,12 @@
-# markdownreview
+# 07 markdownPreview
 
 **其他语言版本：[English](README.md)**
 
 ## 介绍
 
 该项目是一个 Markdown 编辑器，允许用户输入 Markdown 语法并实时预览。它使用 Ace 编辑器和 Marked.js 进行 Markdown 的解析与展示。
+
+![07-markdownPreview](../img-storage/07-markdownpreview.jpg)
 
 ## 目录结构
 

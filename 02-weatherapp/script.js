@@ -1,4 +1,5 @@
-let appId = "d5c08124e00f3c1f12c6539a97899840"; // OpenWeatherMap API 的 appId,该 Key 已失效，请自行申请
+let appId = "d5c08124e00f3c1f12c6539a97899840"; // OpenWeatherMap API 的 appId,该 Key 已失效，请自行申请并替换，申请成功后需要等待一段时间，才能正常使用（这段时间出现 401错误，莫慌）。
+
 let units = "metric"; // 温度单位
 let searchMethod; // 搜索方法，可以是邮政编码（zip）或城市名称（q）
 

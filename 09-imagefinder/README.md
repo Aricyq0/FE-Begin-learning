@@ -1,10 +1,12 @@
-# 09-Image Finder
+# 09 Image Finder
 
 Other language versions: [简体中文](README_zh.md)
 
 ## Project Overview
 
 09-imagefinder is an image discovery project aimed at providing a simple and efficient image search and browsing experience through the integration of various front-end libraries and tools. The project combines a modern tech stack, leveraging React as the front-end framework and supporting a user-friendly interface with good user interaction.
+
+![09-imagefinder](../img-storage/09-imagefinder.jpg)
 
 ## Project Features
 

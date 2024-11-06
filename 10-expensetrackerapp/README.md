@@ -1,10 +1,12 @@
-# Expense Tracking
+# 10 Expense Tracking
 
 **Other language versions: [简体中文](README_zh.md)**
 
 ## Project Overview
 
 This is an expense tracking application that allows users to record and manage their income and expenses. Users can view transaction details, generate reports, and visualize data.
+
+![10-expensetrackerapp](../img-storage/10-expensetrackerapp.jpg)
 
 ## Directory Structure
 

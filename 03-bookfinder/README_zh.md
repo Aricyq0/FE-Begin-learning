@@ -1,10 +1,12 @@
-# 03: Book Finder App
+# 03 Book Finder App
 
 **其他语言版本：[English](README.md)**
 
 ## 简介
 
 Book Finder App 是一个简单的书籍搜索应用，用户可以输入书名或作者，应用将通过 Google Books API 查询并显示相关的书籍信息。
+
+![03-bookfinder-app](../img-storage/03-bookfinder.jpg)
 
 ## 项目结构
 

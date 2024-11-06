@@ -1,10 +1,12 @@
-# 05: Chrome 主题插件
+# 05 Chrome 主题插件
 
 **其他语言版本：[English](README.md)**
 
 ## 项目描述
 
 本项目包含多个适用于 Chrome 浏览器的自定义主题插件，旨在为用户提供丰富多样的视觉体验，满足不同用户的个性化需求。
+
+![05-chromeThemeExtension](../img-storage/05-chromethemeextension.jpg)
 
 ## 插件概述
 

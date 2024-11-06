@@ -1,10 +1,12 @@
-# Todo List 项目
+# 01 待办清单
 
 **其他语言版本：[English](README.md)**
 
 ## 项目介绍
 
 这是一个简单的 Todo List 应用，用户可以添加、删除和修改待办事项的状态。该项目使用原生 JavaScript 和 HTML/CSS 构建，数据通过 `localStorage` 进行持久化存储，旨在提供一个简单易用的待办事项管理工具。
+
+![01-todolist](../img-storage/01-todolist.jpg)
 
 ## 功能
 

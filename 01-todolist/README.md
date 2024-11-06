@@ -1,10 +1,12 @@
-# 01: Todo List
+# 01 Todo List
 
 **Other Languages: [简体中文](README_zh.md)**
 
 ## Introduction
 
 This is a simple Todo List application that allows users to add, delete, and modify the status of their tasks. The project is built using plain JavaScript and HTML/CSS, with data persisted using `localStorage`, aiming to provide a user-friendly task management tool.
+
+![01-todolist](../img-storage/01-todolist.jpg)
 
 ## Features
 

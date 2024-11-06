@@ -1,10 +1,12 @@
-# 06: Countdown
+# 06 Countdown
 
 **Read this in other languages: [简体中文](README_zh.md)**
 
 ## Introduction
 
 This is a simple countdown application that allows users to set a deadline date and time, and the app will update the countdown display in real-time. The code is implemented using plain JavaScript and utilizes the browser's `localStorage` feature to save user settings.
+
+![06-countdown](../img-storage/06-countdownapp.jpg)
 
 ## Features
 
