@@ -1,0 +1,10 @@
+07-24w31-pomodora
+**/node_modules
+**/build
+**/.vscode
+
+**/.DS_Store
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local

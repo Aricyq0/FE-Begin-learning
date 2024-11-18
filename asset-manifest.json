@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/FE-Begin-learning/04-christmaslight/static/css/main.e570cb69.css",
+    "main.js": "/FE-Begin-learning/04-christmaslight/static/js/main.0377689f.js",
+    "index.html": "/FE-Begin-learning/04-christmaslight/index.html",
+    "main.e570cb69.css.map": "/FE-Begin-learning/04-christmaslight/static/css/main.e570cb69.css.map",
+    "main.0377689f.js.map": "/FE-Begin-learning/04-christmaslight/static/js/main.0377689f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e570cb69.css",
+    "static/js/main.0377689f.js"
+  ]
+}
