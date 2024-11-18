@@ -1,7 +1,7 @@
 {
   "name": "04-christmaslight",
   "version": "0.1.0",
-  "homepage": "https://aricyq0.github.io/FE-Begin-learning/04-christmaslight",
+  "homepage": "https://Aricyq0.github.io/FE-Begin-learning/04-christmaslight",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
