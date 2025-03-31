@@ -39,22 +39,19 @@
         └── api.js
 ```
 
+## API 密钥
+
+该项目使用 pixibayd API 进行图像搜索。您需要先注册 pixabay 账号。注册完成后，访问（https://pixabay.com/api/docs/）页面，在`Search Images/Parameters`处即可查看您的 api 密钥。
+
+并在 `src/services/api.js` 文件中，将 `api` 变量值替换为您自己的 API 密钥。
+
 ## 安装
 
-项目需要 Node.js 环境。请确保您已经安装了 Node.js 和 npm（Node Package Manager）。
+在项目目录中运行以下命令安装依赖：
 
-1. 克隆项目到本地：
-   ```bash
-   git clone https://github.com/yourusername/09-imagefinder.git
-   ```
-2. 进入项目目录：
-   ```bash
-   cd 09-imagefinder
-   ```
-3. 安装依赖：
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
 ## 运行
 

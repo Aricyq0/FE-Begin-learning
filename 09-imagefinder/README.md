@@ -43,18 +43,11 @@ English | [简体中文](README_zh.md)
 
 The project requires a Node.js environment. Please ensure you have Node.js and npm (Node Package Manager) installed.
 
-1. Clone the project to your local machine:
-   ```bash
-   git clone https://github.com/yourusername/09-imagefinder.git
-   ```
-2. Navigate into the project directory:
-   ```bash
-   cd 09-imagefinder
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
+Run the following command in the project directory to install dependencies:
+
+```bash
+npm install
+```
 
 ## Running the Project
 

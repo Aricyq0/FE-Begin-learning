@@ -66,8 +66,7 @@
    npm install
    ```
 
-2
-. 运行应用：
+2. 运行应用：
 
 ```bash
 npm start
