@@ -39,6 +39,12 @@ English | [简体中文](README_zh.md)
         └── api.js
 ```
 
+## API Key
+
+This project uses the Pixabay API for image searching. You need to register for a Pixabay account first. After registration, visit (https://pixabay.com/api/docs/) and find your API key in the `Search Images/Parameters` section.
+
+Replace the `api` variable value in `src/services/api.js` with your own API key.
+
 ## Installation
 
 The project requires a Node.js environment. Please ensure you have Node.js and npm (Node Package Manager) installed.
